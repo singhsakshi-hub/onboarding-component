@@ -33,21 +33,32 @@ function Login() {
   }
 
   return (
-    <div>
+    <div style={{ padding: "30px" }}>
       <form onSubmit={handleSubmit}>
-        <input
-          type='text'
-          placeholder="Enter Username"
-          value={userName}
-          onChange={(e) => setUserName(e.target.value)}
-        />
-        <input
-          type='text'
-          placeholder="Enter password"
-          value={password}
-          onChange={(e) => setpassword(e.target.value)}
-        />
-        <button type='submit'>
+        <h2 style={{ textAlign: "center", marginBottom: "12px" }}>Login</h2>
+        <div>
+          <input
+            type='text'
+            placeholder="Enter Username"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+            style={{ padding: "6px", width: "250px", marginTop: "16px" }}
+          />
+        </div>
+        <div>
+          <input
+            type='text'
+            placeholder="Enter password"
+            value={password}
+            onChange={(e) => setpassword(e.target.value)}
+            style={{ padding: "6px", width: "250px", marginTop: "16px" }}
+          />
+        </div>
+
+        <button
+          type='submit'
+          style={{ padding: "6px", width: "150px", marginTop: "16px" }}
+        >
           Login
         </button>
       </form>
